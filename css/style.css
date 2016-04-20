@@ -1,0 +1,25 @@
+body {
+	text-transform: uppercase;
+	font-family: 'PT Sans', arial;
+	font-size: 14px;
+	line-height: 26px;
+	color: #333333;
+	font-weight: normal;
+
+}
+
+h1 {
+	font-size: 21px;
+	line-height: 26px;
+	color: #000000;
+	font-weight: bold;
+	font-family: 'PT Sans Bold', arial;
+}
+
+h3 {
+	font-size: 30px;
+	line-height: 24px;
+	color: #000000;
+	font-weight: bold;
+	font-family: 'PT Sans Bold', arial;
+}
