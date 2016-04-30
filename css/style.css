@@ -12,6 +12,7 @@ body {
 
 
 
+
 ul{
 	margin: 0;
 	padding: 0;
@@ -170,21 +171,22 @@ footer{
 .little-city {
   display: block;
   padding-top: 60px;
-text-align: center;
+  text-align: center;
+  padding-bottom: 59px;
 }
 
 
 
 .little-city h1{
 	margin:0;
-	margin-bottom: 40px;
 	padding: 0 30%;
 }
 
 
 
 .little-city p {
-	margin-bottom: 59px;
+	padding-top: 40px;
+	margin:0;
 }
 
 
@@ -553,7 +555,7 @@ text-align: center;
 }
 
 
-.sort div:nth-child(1) {
+.found {
 	color: #000000;
 	font-family: 'PT Sans Bold', arial;
 	font-size: 21px;
@@ -564,31 +566,30 @@ text-align: center;
 
 
 
-.sort div:nth-child(2) {
+.sorting {
 	color: #000000;
 	font-family: 'PT Sans Regular', arial;
 	font-size: 12px;
 	font-weight: normal;
 	line-height: 18px;
 	display: flex;
+	margin-right: 440px;
 }
 
 
 
-.sort div:nth-child(2) span {
+.sorting span {
 	margin-right: 37px;
 }
 
 
-.sort div:nth-child(2) a {
+.sorting a {
 	margin-right: 33px;
 }
 
-.sort div:nth-child(2)  {
-	margin-right: 440px;
-}
 
-.sort div:nth-child(3) a:first-child{
+
+.stars a:first-child{
 	margin-right: 14px;
 }
 
@@ -687,9 +688,12 @@ text-align: center;
 }
 
 
+.result-info {
+	padding-right: 400px;
+}
+
 
 .rating {
-	padding-left: 400px;
 	display: flex;
 	flex-direction: column;
 }
