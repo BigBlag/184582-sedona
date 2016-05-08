@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/symbols-sedona.css">
+  <link href="http://allfont.ru/allfont.css?fonts=pt-sans-bold" rel="stylesheet" type="text/css" />
+  <link href="http://allfont.ru/allfont.css?fonts=pt-sans" rel="stylesheet" type="text/css" />
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <ul>
+          <li><a href="#" class="active">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li><a href="hotels.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+      <div class="header-logo">
+        <a href="index.html"><img src="img/logo.png" height="70px" width="138px" alt="Седона"></a>
+      </div>
+    </header>
+    <section class="intro">
+      <!--<img src="img/index-logo.jpg" width="1200px" height="773px" alt="landscape">-->
+      <img src="img/logo-title.png" width="458px" height="352px" alt="title">
+      <img src="img/logo-line.png" width="1200px" height="57px" alt="line">
+      <a href="#" class="search-title">Поиск гостиницы в Седоне</a>
+    </section>
+    <section class="map">
+      <!--<img src="img/map.png" width="1200px" height="593px" alt="map">-->
+      <form action="#" method="get" class="search-form search-form-invisible">
+        <label class="check-in">
+          Дата заезда:
+          <input class="date" id="check-in" type="text" name="check-in" value="24 апреля 2016">
+          <a href="#" class="icon-calendar first"></a>
+        </label>
+        <label class="check-out">
+          Дата выезда:
+          <input class="date" type="text" name="check-out" value="4 июля 2016">
+          <a href="#" class="icon-calendar second"></a>
+        </label>
+        <div class="num-enter">
+          <div class="adult">
+            <label>
+              Взрослые
+              <button>
+                <a class="icon-minus"></a>
+              </button>
+              <input type="text" name="adult-num" value="2">
+               <button>
+                 <a class="icon-plus"></a>
+              </button>
+            </label>
+          </div>
+          <div class="сhildren">
+            <label>
+              Дети
+              <button>
+                <a class="icon-minus"></a>
+              </button>
+              <input type="text" name="сhildren-num" value="0">
+               <button>
+                 <a class="icon-plus"></a>
+              </button>
+            </label>
+          </div>
+        </div>
+        <input type="submit" name="search" value="Найти">
+      </form>
+    </section>
+    <footer class="main-footer">
+      <div class="inst">
+        <a href="#">#Visitsedona</a>
+      </div>
+      <div class="footer-social">
+        <a class="social-btn icon-twitter" href="#"></a>
+        <a class="social-btn icon-facebook" href="#"></a>
+        <a class="social-btn icon-youtube" href="#"></a>
+      </div>
+      <div class="footer-copyright">
+        <a class="copyright" href="https://htmlacademy.ru">Website by</a>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

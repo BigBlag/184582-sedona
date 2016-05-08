@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/symbols-sedona.css">
   <link href="http://allfont.ru/allfont.css?fonts=pt-sans-bold" rel="stylesheet" type="text/css" />
   <link href="http://allfont.ru/allfont.css?fonts=pt-sans" rel="stylesheet" type="text/css" />
   <title>HTML Academy: Седона</title>
@@ -15,7 +16,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <ul>
-          <li><a href="#">Информация</a></li>
+          <li><a href="#" class="active">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
@@ -93,34 +94,45 @@
     <section class="interest">
       <h3>Заинтересовались?</h3>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <a href="#" class="search-title">Поиск гостиницы в Седоне</a>
+      <a href="form.html" class="search-title">Поиск гостиницы в Седоне</a>
     </section>
     <section class="map">
       <!--<img src="img/map.png" width="1200px" height="593px" alt="map">-->
-      <form action="#" method="get">
-        <label>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.135657750005!2d-111.83015785552408!3d34.854443815271225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1462701969314" width="1200" height="473" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <form action="#" method="get" class="search-form search-form-invisible">
+        <label class="check-in">
           Дата заезда:
-          <input id="date" type="text" name="check-in" value="24 апреля 2016">
+          <input id="day-in" type="text" name="check-in" value="24 апреля 2016">
+          <a href="#" class="icon-calendar first"></a>
         </label>
-        <label>
+        <label class="check-out">
           Дата выезда:
-          <input type="text" name="check-out" value="4 июля 2016">
+          <input type="text" name="day-out" value="4 июля 2016">
+          <a href="#" class="icon-calendar second"></a>
         </label>
         <div class="num-enter">
           <div class="adult">
             <label>
               Взрослые
-              <input class="button" type="button" name="adult-" value="-">
+              <button>
+                <a class="icon-minus"></a>
+              </button>
               <input type="text" name="adult-num" value="2">
-              <input class="button" type="button" name="adult+" value="+">
+               <button>
+                 <a class="icon-plus"></a>
+              </button>
             </label>
           </div>
           <div class="сhildren">
             <label>
               Дети
-              <input class="button" type="button" name="сhildren-" value="-">
+              <button>
+                <a class="icon-minus"></a>
+              </button>
               <input type="text" name="сhildren-num" value="0">
-              <input class="button" type="button" name="сhildrent+" value="+">
+               <button>
+                 <a class="icon-plus"></a>
+              </button>
             </label>
           </div>
         </div>
@@ -132,15 +144,32 @@
         <a href="#">#Visitsedona</a>
       </div>
       <div class="footer-social">
-        <a class="social-btn social-btn-tw" href="#">Twitter</a>
-        <a class="social-btn social-btn-fb" href="#">Facebook</a>
-        <a class="social-btn social-btn-yt" href="#">YouTube</a>
+        <a class="social-btn icon-twitter" href="#"></a>
+        <a class="social-btn icon-facebook" href="#"></a>
+        <a class="social-btn icon-youtube" href="#"></a>
       </div>
       <div class="footer-copyright">
-        <a class="copyright" href="https://htmlacademy.ru">Website by<img src="img/htmlacademy.png" width="113px" height="39px" alt="html academy"></a>
+        <a class="copyright" href="https://htmlacademy.ru">Website by</a>
       </div>
     </footer>
   </div>
+
+  <script>
+    var link = document.querySelector(".search-title");
+    var searchForm = document.querySelector(".search-form");
+    var date = searchForm.querySelector("#day-in");
+    link.addEventListener("click", function(event) {
+    event.preventDefault();
+    if (searchForm.classList.contains("search-form-visible")) {
+        searchForm.classList.add("search-form-invisible");
+        searchForm.classList.remove("search-form-visible");
+    } else {
+        searchForm.classList.add("search-form-visible");
+        searchForm.classList.remove("search-form-invisible");
+    };
+    date.focus();
+});
+  </script>
 </body>
 
 </html>
