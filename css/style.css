@@ -502,7 +502,10 @@ input {
 	line-height: 26px;
 }
 
-
+.footer-social {
+	display: flex;
+	justify-content: center;
+}
 
 .social-btn {
 	color: #ffffff;
@@ -525,6 +528,7 @@ input {
 	background-color: #5496bd;
 	color: #88b6d1;
 }
+
 
 
 
@@ -563,13 +567,13 @@ input {
 .icon-twitter,
 .icon-facebook {
 	margin-right: 6px;
-	margin-top: -100px;
+
 }
 
 .icon-youtube {
 	font-size: 23px;
-	padding-top: 10px;
-	padding-bottom: 3px;
+	padding-top: 11px;
+	padding-bottom: 2.5px;
 }
 
 .filter form {
@@ -1001,7 +1005,7 @@ button:nth-child(1) {
 }
 
 .rating .first {
-  padding-right: 5px;
+	margin-left: -6px;
 }
 
 .rating .second {
@@ -1017,12 +1021,12 @@ button:nth-child(1) {
 	display: none;
 }
 
-.filter label {
-}
+
 
 
 .filter input[type="checkbox"]+label {
 	padding-bottom: 10px;
+	width: 150px;
 	cursor: pointer;
 }
 
@@ -1230,3 +1234,4 @@ iframe {
 
   background: #ffffff;
 }
+
