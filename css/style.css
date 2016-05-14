@@ -172,10 +172,11 @@ footer{
 
 
 .intro {
+	position: relative;
   	display: block;
 	width: 1200px;
 	height: 508px;
-	background: url('../img/index-logo.jpg') no-repeat top center;
+	background: #eee url('../img/index-logo.jpg') no-repeat top center;
 }
 
 
@@ -190,8 +191,9 @@ footer{
 
 
 .intro img:nth-child(2) {
-	position: absolute;
-	top: 507px;
+    position: absolute;
+    height: 57px;
+    bottom: 0;
 }
 
 
@@ -380,7 +382,7 @@ input {
 	flex-direction: column;
 	width: 1200px;
 	height: 473px;
-	background: url('../img/map.png') no-repeat top center;
+	background: #eee url('../img/map.png') no-repeat top center;
 }
 
 
@@ -580,17 +582,17 @@ input {
 	font-weight: normal;
 	line-height: 26px;
 
-	background: url('../img/htmlacademy.png') no-repeat right 9px;
+	background: rgba(255,255,255,0.9) url('../img/htmlacademy.png') no-repeat right 9px;
 	padding: 20px 121px 15px 0;
 }
 
 
 .footer-copyright a:hover {
-	background-position: 92px -39px ;
+	background-position: right -39px;
 }
 
 .footer-copyright a:active {
-	background-position: 92px -86px ;
+	background-position: right -86px ;
 }
 
 
@@ -611,14 +613,14 @@ input {
 .icon-youtube {
 	font-size: 23px;
 	padding-top: 11px;
-	padding-bottom: 2.5px;
+	padding-bottom: 1.8px;
 }
 
 .filter form {
 	display: flex;
 	width: 1200px;
 	height: 218px;
-	background: url('../img/filter-background.png') no-repeat top center;
+	background: #eee url('../img/filter-background.png') no-repeat top center;
 }
 
 
@@ -901,6 +903,8 @@ input {
 .rating {
 	display: flex;
 	flex-direction: column;
+	margin-top: 0.5px;
+	margin-left: 1px;
 }
 
 
@@ -908,7 +912,7 @@ input {
 	background-color: #f2f2f2;
 	padding: 3px 15px;
 	margin-left: -30px;
-	margin-top: 25px;
+	margin-top: 30px;
 	font-size: 14px;
 	line-height: 21px;
 
@@ -921,6 +925,7 @@ input {
 	font-size: 14px;
 	font-weight: normal;
 	line-height: 21px;
+	letter-spacing: -0.5px;
 }
 
 
@@ -943,8 +948,6 @@ input {
 .by-type:hover,
 .by-rating:hover {
 	color: #81b3d2;
-	margin-right: 3px;
-	margin-top: -2px;
 }
 
 
@@ -1092,7 +1095,7 @@ button:nth-child(1) {
 	line-height: 20px;
 	font-family: 'symbols-sedona';
 	vertical-align: middle;
-	color: #b5b5b5;
+	color: #ffffff;
 }
 
 
@@ -1103,8 +1106,17 @@ button:nth-child(1) {
 	font-family: 'symbols-sedona';
 }
 
+
+.filter input[type="checkbox"]:disabled+label:before {
+	content: "\2611";
+	font-size: 26px;
+	line-height: 20px;
+	font-family: 'symbols-sedona';
+	color: #6a6a6a;
+}
+
 .filter input[type="checkbox"]+label:hover:before {
-	color: #fefefe;
+	color: #ffffff;
 }
 
 iframe {
