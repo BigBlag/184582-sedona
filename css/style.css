@@ -751,30 +751,30 @@ input {
 	margin-right: 24px;
 }
 
-.stars {
+.values {
 	font-size: 23px;
 	line-height: 20px;
 }
 
-.stars i {
+.values i {
 	cursor: pointer;
 }
 
-.stars i:first-child {
+.values i:first-child {
 	margin-right: -10px;
 	color: #cccccc;
 }
 
-.stars i:first-child:hover {
+.values i:first-child:hover {
 	color: #000000;
 }
 
 
-.stars i:first-child:active {
+.values i:first-child:active {
 	color: #81b3d2;
 }
 
-.stars i:last-child {
+.values i:last-child {
 	color: #81b3d2;
 }
 
